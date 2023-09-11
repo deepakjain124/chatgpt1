@@ -10,8 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://gptoutputdetector.com",
-    // origin:"http://localhost:3000",
+    origin: ["https://gptoutputdetector.com","https://gptzero.com"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   })
 );
